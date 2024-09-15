@@ -11,7 +11,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Kopiere die JAR-Datei ins Arbeitsverzeichnis
-COPY --from=build /target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /target/einkaufsliste-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponiere den Port
 EXPOSE 8080
